@@ -1,253 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA_compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fsjp mini project</title>
-    <p style="font-family: 'Playfair Display', serif; font-size: 40px;">
-  Tourist Attractions in Bali
-</p>
-    </h1>
-  
-<body style="background: linear-gradient(135deg, #FFE2C2 0%, #FFD0B0 35%, #FFC1C8 70%, #F6C9F2 100%); color: #5A3B2E; margin: 0; min-height: 100vh; background-repeat: no-repeat;">
-
-  <title>Image Carousel</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fsjp mini project</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #FFE2C2 0%, #FFD0B0 35%, #FFC1C8 70%, #F6C9F2 100%);
+      color: #5A3B2E;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    h1, h3 {
+      text-align: center;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin: 10px 0;
+    }
+
+    table,
+    tr,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    table {
+      width: 50%;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    td {
+      padding: 8px;
+    }
+  </style>
 </head>
 <body>
+
+  <div class="content">
+    <p style="font-size: 40px; text-align: center;">
+      Tourist Attractions in Bali
+    </p>
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="https://sumber-solusi-digital.s3.ap-southeast-1.amazonaws.com/public/1704808381_tw5qiebaba.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://images.pexels.com/photos/19137460/pexels-photo-19137460.jpeg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://www.magicmurals.com/media/catalog/product/cache/af1e2a1566fa2dbb552605e8822354b7/f/o/fot-0064824477.jpg" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <hr>
+
+    <h3>Top 10 Temples in Bali</h3>
+    <ol>
+      <li>Ubud Palace<br>
+        <img src="https://i.pinimg.com/736x/0a/36/c8/0a36c8bcbc26f40cea0e3ac929ce44e1.jpg" height="500" width="500">
+      </li>
+      <li>Uluwatu Temple<br>
+        <img src="https://lestacworld.com/wp-content/uploads/2021/05/uluwatu-cliff-temple.jpeg" height="500" width="500">
+      </li>
+      <li>Lempuyang Temple<br>
+        <img src="https://www.baliholidaysecrets.com/wp-content/uploads/2019/11/lempuyang-temple-11-bali-holiday-secrets-590x735.jpg" height="500" width="500">
+      </li>
+      <li>Tanah Lot Temple<br>
+        <img src="https://vietnamalluretravel.com/wp-content/uploads/2024/09/DJI_0943_1200-1.jpg" height="500" width="500">
+      </li>
+      <li>Besakih Temple<br>
+        <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0a/99/ce/f7.jpg" height="500" width="500">
+      </li>
+      <li>Saraswati Temple<br>
+        <img src="https://lesdroners.fr/wp-content/uploads/2020/10/saraswati-temple-ubud-scaled.jpg" height="500" width="500">
+      </li>
+      <li>Taman Ayun Temple<br>
+        <img src="https://static.toiimg.com/thumb/msid-47330125,width-550,height-433/47330125.jpg" height="500" width="500">
+      </li>
+      <li>Goa Gajah Temple<br>
+        <img src="https://th.bing.com/th/id/OIP.1AMfl5a3W1Lv1YG_4bQXHgHaE7?r=0&rs=1&pid=ImgDetMain" height="500" width="500">
+      </li>
+      <li>Ulun Danu Beratan Temple<br>
+        <img src="https://th.bing.com/th/id/OIP.S6bO6XrYc467CsH91JtBjwHaEo?r=0&rs=1&pid=ImgDetMain" height="500" width="500">
+      </li>
+      <li>Goa Lawah Temple<br>
+        <img src="https://www.baligoldentour.com/images/bali-interest-place/goa-lawah-temple-1.jpg" height="500" width="500">
+      </li>
+    </ol>
+
+    <hr>
+
+    <h3>Non-religious Things to Do in Bali</h3>
+    <ol>
+      <li>Waterfalls
+        <ul>
+          <li>Tegenungan Waterfall</li>
+          <li>Tukad Cepung Waterfall</li>
+          <li>Kanto Lampo Waterfall</li>
+          <li>Aling Aling Waterfall</li>
+          <li>Leke Leke Waterfall</li>
+          <li>Beji Griya Waterfall</li>
+        </ul>
+      </li>
+      <li>Tegalalang Rice Terraces</li>
+      <li>Campuhan Ridge Walk</li>
+      <li>Beaches
+        <ul>
+          <li>Nusa Dua Beach</li>
+          <li>Kuta</li>
+          <li>Seminyak</li>
+          <li>Jimbaran Bay</li>
+        </ul>
+      </li>
+      <li>West Bali National Park</li>
+      <li>Munduk</li>
+      <li>Nusa Lembongan</li>
+    </ol>
+
+    <hr>
+
+    <h3>Famous Treks in Bali</h3>
+    <table>
+      <tr>
+        <td>Name of the trek</td>
+        <td>Distance</td>
+        <td>Time taken</td>
+      </tr>
+      <tr>
+        <td>Mount Batur sunrise trek</td>
+        <td>5 km</td>
+        <td>4 hrs</td>
+      </tr>
+      <tr>
+        <td>Sambangan Secret Garden Trek</td>
+        <td>4 km</td>
+        <td>3 hrs</td>
+      </tr>
+      <tr>
+        <td>Sari Organic Walk</td>
+        <td>3.5 km</td>
+        <td>3 hrs</td>
+      </tr>
+    </table>
+  </div>
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="https://sumber-solusi-digital.s3.ap-southeast-1.amazonaws.com/public/1704808381_tw5qiebaba.jpg" alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="https://images.pexels.com/photos/19137460/pexels-photo-19137460.jpeg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="https://www.magicmurals.com/media/catalog/product/cache/af1e2a1566fa2dbb552605e8822354b7/f/o/fot-0064824477.jpg" alt="Third slide">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-</html>
-    <hr>
-    </p>
-    <h3>top 10 temples in bali</h3>
-    <ol>
-        <li>ubud palace<br>
-            <img src="https://i.pinimg.com/736x/0a/36/c8/0a36c8bcbc26f40cea0e3ac929ce44e1.jpg" height="500" width="500">
-        </li>
-<p> Ubud Palace (Puri Saren Agung) is a living canvas of Balinese artistry—ornate stone carvings, gilded details, and lush courtyards that radiate timeless elegance.  
-
-Nestled in the heart of Ubud, the palace was built in the early 19th century under the reign of Tjokorda Putu Kandel and still serves as the residence of Ubud’s royal family. Its aesthetic appeal lies in the harmony between traditional Balinese architecture and natural surroundings. The entrance gates are adorned with intricately carved volcanic stone motifs, often depicting mythological figures, while golden embellishments shimmer against the earthy tones of brick and wood.  
-
-The courtyards are spacious yet intimate, framed by frangipani trees and tropical foliage, which soften the grandeur of the structures. The pavilions, with their tiered thatched roofs and finely carved wooden beams, create a rhythm of shadow and light that feels both regal and serene. At dusk, the palace transforms into a stage for cultural performances, where flickering lanterns and the glow of oil lamps highlight the delicate carvings, making the stone appear almost alive.  
-
-What makes Ubud Palace aesthetically unique is its fusion of power and poetry: the sturdy stone walls symbolize permanence, while the delicate floral motifs and gilded accents evoke grace. Walking through its pathways feels like stepping into a painting—every angle offers a composition of texture, color, and balance. It is not just a monument, but a living embodiment of Bali’s royal heritage, where artistry and spirituality converge in breathtaking detail.  </p>
-        <br>
-        <br>
-        <li>uluwatu temple<br>
-            <img src="https://lestacworld.com/wp-content/uploads/2021/05/uluwatu-cliff-temple.jpeg" height="500"
-                width="500">
-<p>Perched dramatically on a rugged limestone cliff 70 meters above the Indian Ocean, Uluwatu Temple (Pura Luhur Uluwatu) is one of Bali’s most striking spiritual landmarks. Its aesthetic power lies in the interplay between natural grandeur and sacred architecture. The temple itself is modest in scale, built from black coral stone that blends seamlessly with the cliff’s weathered textures, yet its placement makes it feel monumental.  
-
-The approach to the temple winds through shaded pathways lined with frangipani trees, their blossoms scattering across ancient stone steps. Carved gateways and guardian statues, weathered by sea air, stand sentinel, their intricate details softened by time but still radiating quiet strength. The temple’s shrines, with tiered meru roofs, rise elegantly against the vast horizon, their silhouettes etched sharply against the sky.  
-
-At sunset, Uluwatu becomes a living painting. The ocean below churns in shades of turquoise and deep indigo, while the sky ignites with fiery oranges and purples. The temple’s cliffside perch transforms into a stage of contrasts—solid stone against fluid waves, stillness against motion. The famed Kecak dance, performed in an open amphitheater nearby, adds to the aesthetic drama: flickering torches illuminate dancers in rhythmic motion, echoing the primal energy of the sea below.  
-
-Uluwatu Temple’s beauty is not in ornate decoration but in its dialogue with nature. It embodies balance—between earth and ocean, human devotion and elemental force—making it one of Bali’s most awe-inspiring sacred sites.  
-
-Would you like me to continue with Tanah Lot next, so you’ll have a cohesive set of Bali’s iconic temples described in this style? </p>
-            <br><br>
-        </li>
-        <li>lempuyang temple<br>
-            <img src="https://www.baliholidaysecrets.com/wp-content/uploads/2019/11/lempuyang-temple-11-bali-holiday-secrets-590x735.jpg"
-                height="500" width="500">
-<p>Lempuyang Temple (Pura Luhur Lempuyang) is one of Bali’s most ethereal sanctuaries, celebrated for its breathtaking harmony between architecture and landscape. Known as the “Gateway to Heaven,” the temple sits high on Mount Lempuyang, offering sweeping views of Mount Agung framed perfectly through its iconic split gates.  
-
-The aesthetic essence of Lempuyang lies in its simplicity and grandeur. The candi bentar (split gateway) is crafted from pale stone, its surfaces weathered by time yet softened by moss and mist. The gates rise like monumental bookends, their clean lines contrasting with the vast, shifting sky beyond. When clouds drift across Mount Agung, the view becomes a living painting—sometimes veiled in mystery, sometimes crystalline in clarity.  
-
-The temple complex itself is serene, with stone stairways ascending through lush tropical greenery. Along the path, statues of mythological guardians stand watch, their intricate carvings imbued with a sense of timeless devotion. The air is cool and often tinged with incense, adding a sensory depth to the visual splendor.  
-
-At sunrise or sunset, the temple transforms into a stage of light and shadow. Golden rays illuminate the gates, while the mountain’s silhouette deepens into dramatic contrast. Visitors often pause here not just for photographs, but to absorb the dialogue between human craftsmanship and natural majesty. Lempuyang Temple’s beauty is not ornate—it is elemental, a place where stone, sky, and spirit converge into a vision of transcendence. </p>
-<br>
-            <br>
-        </li>
-        <li>temple tanha lot<br>
-            <p><img src="https://vietnamalluretravel.com/wp-content/uploads/2024/09/DJI_0943_1200-1.jpg" height="500"
-                    width="500"></p>
-        </li>
-<p> Tanah Lot Temple (Pura Tanah Lot) is one of Bali’s most iconic and visually poetic sites, rising from a rocky outcrop that seems sculpted by the ocean itself. Its aesthetic allure lies in the way the temple appears both eternal and ephemeral—solid stone standing against the ceaseless rhythm of waves.  
-
-The temple is built upon a rugged sea rock, its base carved naturally by centuries of tides. At high tide, the rock becomes an island, surrounded by swirling turquoise waters, giving the temple an aura of isolation and mystery. The shrines, with their tiered meru roofs, are simple yet striking, their dark silhouettes etched against the vast horizon. Moss and sea spray soften the stone, adding texture that feels alive, as if the temple breathes with the ocean.  
-
-At sunset, Tanah Lot transforms into a living masterpiece. The sky ignites with hues of gold, crimson, and violet, casting the temple in dramatic silhouette. The waves crash below, their white foam glowing in the fading light, while the temple itself seems suspended between sea and sky. Lanterns flicker along the pathways, guiding visitors through gardens and vantage points where every angle offers a new composition of color and form.  
-
-Tanah Lot’s beauty is elemental: the dialogue between stone and sea, light and shadow, permanence and change. It is less about ornate detail and more about the grandeur of placement, a temple that embodies Bali’s spiritual connection to nature in its most dramatic form. </p> <br><br>
-        <li>besakhi temple<br>
-            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0a/99/ce/f7.jpg" height="500"
-                width="500">
-        </li>
-<p> Besakih Temple (Pura Besakih), often called the “Mother Temple of Bali,” is the island’s largest and holiest temple complex, nestled on the slopes of Mount Agung. Its aesthetic grandeur lies in scale and setting—over eighty individual temples cascade across terraced levels, each framed by lush greenery and the dramatic backdrop of Bali’s tallest volcano.  
-
-The architecture is a symphony of stone and wood, with towering gateways (candi bentar) and multi-tiered meru shrines rising gracefully against the sky. The volcanic stone, dark and textured, contrasts beautifully with the vivid offerings of flowers and cloths in saffron, white, and red, creating a vibrant interplay of color. Stairways lined with guardian statues lead upward, giving a sense of pilgrimage and ascension, while the air carries the mingled scents of incense and mountain mist.  
-
-From the higher terraces, the view opens to sweeping panoramas of rice fields, forests, and distant ocean, making the temple feel both grounded and celestial. During ceremonies, the complex comes alive with processions of devotees in traditional attire, their parasols and banners adding splashes of gold and crimson to the temple’s solemn stone.  
-
-Besakih’s aesthetic power lies in its fusion of immensity and intimacy: monumental structures that inspire awe, yet delicate carvings and offerings that invite quiet reflection. It embodies Bali’s spiritual essence, where human devotion and natural majesty converge into a timeless vision of sacred beauty. </p> <br><br>
-        <li>saraswati temple<br>
-            <img src="https://lesdroners.fr/wp-content/uploads/2020/10/saraswati-temple-ubud-scaled.jpg" height="500"
-                width="500">
-<p>Saraswati Temple (Pura Taman Saraswati) in Ubud is a jewel of Balinese artistry, dedicated to the goddess of wisdom, learning, and the arts. Its aesthetic charm lies in the delicate balance between sacred architecture and lush natural beauty.  
-
-The temple is approached through a pathway flanked by lotus ponds, where vibrant pink blossoms float serenely on the water, creating a sense of tranquility before one even enters the sacred space. These ponds act as living canvases, reflecting the temple’s ornate stone carvings and gilded details, while dragonflies and koi add subtle movement to the scene.  
-
-The gateways and shrines are adorned with intricate reliefs of floral and mythological motifs, carved from volcanic stone and highlighted with touches of gold. The craftsmanship is meticulous, every curve and line echoing devotion and artistry. The main shrine rises elegantly, its tiered roof framed by frangipani trees whose blossoms scatter across the courtyards, softening the grandeur with natural grace.  
-
-At dusk, the temple glows with lantern light, and the lotus ponds shimmer like mirrors of the sky. Cultural performances often take place here, with dancers moving against the backdrop of the temple’s carvings, their costumes echoing the vibrant palette of the surroundings.  
-
-Saraswati Temple’s beauty is gentle yet profound: a sanctuary where water, stone, and blossoms converge to honor the goddess of knowledge. It embodies the idea that wisdom itself is an aesthetic experience—serene, balanced, and deeply harmonious.   the grandeur with natural grace.  
-
-At dusk, the temple glows with lantern light, and the lotus ponds shimmer like mirrors of the sky. Cultural performances often take place here, with dancers moving against the backdrop of the temple’s carvings, their costumes echoing the vibrant palette of the surroundings.  
-
-Saraswati Temple’s beauty is gentle yet profound: a sanctuary where water, stone, and blossoms converge to honor the goddess of knowledge. It embodies the idea that wisdom itself is an aesthetic experience—serene, balanced, and deeply harmonious.</p> <br><br>
-        </li>
-        <li>taman ayun temple<br>
-            <img src="https://static.toiimg.com/thumb/msid-47330125,width-550,height-433/47330125.jpg" height="500"
-                width="500">
-<p> Taman Ayun Temple (Pura Taman Ayun) in Mengwi is a masterpiece of harmony, where architecture, water, and greenery weave together into a serene aesthetic. Built in the 17th century by the royal family of Mengwi, its name translates to “beautiful garden,” and the temple lives up to that promise with its lush surroundings and graceful design.  
-
-The temple complex is encircled by a wide moat, giving it the impression of floating like a sacred island. Crossing the stone bridge into the inner courtyards feels like entering a hidden sanctuary. The grounds are meticulously landscaped, with manicured lawns, flowering frangipani trees, and tropical plants that soften the grandeur of the structures.  
-
-The shrines themselves are striking: multi-tiered meru towers rise elegantly, their black thatched roofs stacked in ascending layers that echo the rhythm of the sky. Each tower is carefully proportioned, creating a visual balance that feels both monumental and delicate. Carved stone gates and guardian statues mark transitions between courtyards, their details intricate yet understated, blending seamlessly with the natural setting.  
-
-At sunset, the temple glows with warm light, the meru roofs silhouetted against a golden horizon while reflections shimmer across the moat. The atmosphere is tranquil, almost meditative, inviting visitors to linger and absorb the interplay of water, stone, and foliage.  
-
-Taman Ayun’s aesthetic lies in its fusion of elegance and serenity—a temple that feels less like a fortress of devotion and more like a living garden of the gods, timeless and deeply harmonious. </p>
-<br><br>
-        </li>
-        <li>goa gajah temple<br>
-            <img src="https://th.bing.com/th/id/OIP.1AMfl5a3W1Lv1YG_4bQXHgHaE7?r=0&rs=1&pid=ImgDetMain" height="500"
-                width="500">
-        </li> 
-<p> Goa Gajah Temple (Elephant Cave) is one of Bali’s most enigmatic sites, blending mysticism, artistry, and natural beauty into a single sacred space. Located near Ubud, it is renowned for its striking cave entrance, carved directly into rock with fierce, almost surreal reliefs. The façade depicts a wide-eyed demon-like face, its mouth forming the doorway, surrounded by swirling motifs of leaves, animals, and mythological figures. This dramatic carving creates an atmosphere of both awe and intrigue, as if stepping into another realm.  
-
-Inside the cave, the atmosphere shifts to quiet solemnity. The dimly lit interior houses ancient stone idols and meditation niches, their surfaces worn smooth by centuries of devotion. The simplicity of the inner chamber contrasts with the elaborate exterior, emphasizing the temple’s spiritual depth over material grandeur.  
-
-Beyond the cave, the temple grounds unfold into tranquil courtyards and bathing pools. Clear water trickles from sculpted stone spouts into pools framed by moss-covered walls, creating a serene rhythm of sound and reflection. Towering banyan trees drape their roots across the site, adding to the sense of timelessness and natural embrace.  
-
-The aesthetic essence of Goa Gajah lies in its fusion of the dramatic and the serene: a fierce guardian face carved in stone, leading into a quiet sanctuary, all surrounded by lush greenery and flowing water. It is a place where artistry, nature, and spirituality converge, offering visitors a glimpse into Bali’s ancient soul.</p>
-<br><br>
-        <li>ulun danu beratan temple<br>
-            <img src="https://th.bing.com/th/id/OIP.S6bO6XrYc467CsH91JtBjwHaEo?r=0&rs=1&pid=ImgDetMain" height="500"
-                width="500"> <br><br>
-        </li>
-<p> Ulun Danu Beratan Temple (Pura Ulun Danu Beratan) is one of Bali’s most enchanting temples, celebrated for its serene setting on the shores of Lake Beratan in Bedugul. Its aesthetic beauty lies in the seamless union of water, mountain, and sacred architecture, creating a scene that feels almost dreamlike.  
-
-The temple complex appears to float upon the lake, with its shrines reflected in the still waters like a delicate watercolor painting. The most iconic structure is the multi-tiered meru tower, its black thatched roofs rising in graceful layers against the backdrop of misty mountains. The symmetry of the tower, mirrored in the lake, creates a visual rhythm that is both tranquil and majestic.  
-
-Surrounding the temple are lush gardens filled with tropical flowers, manicured lawns, and stone statues adorned with vibrant cloths. The cool mountain air carries the scent of blossoms and incense, adding sensory depth to the visual splendor. Mist often drifts across the lake, softening the outlines of the temple and giving it an ethereal, almost mystical quality.  
-
-At sunrise, golden light spills across the water, illuminating the temple in warm tones, while at dusk, the sky turns shades of violet and indigo, casting the shrines into silhouette. The interplay of light, reflection, and natural grandeur makes Ulun Danu Beratan not just a temple, but a living artwork—an embodiment of harmony between human devotion and the elemental beauty of Bali’s landscape. </p>
-<br> <br>
-        <li>goa lawah temple<br>
-            <img src="https://www.baligoldentour.com/images/bali-interest-place/goa-lawah-temple-1.jpg" height="500"
-                width="500">
-        </li>
-<p> Goa Lawah Temple (Pura Goa Lawah), often called the “Bat Cave Temple,” is one of Bali’s most atmospheric sanctuaries, blending natural wonder with sacred architecture. Situated near Kusamba, its aesthetic charm lies in the dramatic interplay between the temple’s shrines and the living cave that forms its heart.  
-
-The entrance is marked by intricately carved stone gates, adorned with guardian statues that stand watch over the sacred grounds. Beyond them, the cave itself opens like a dark mouth, its ceiling alive with thousands of bats clinging in clusters, their subtle movements adding a sense of mystery and vitality. The contrast between the delicate carvings and the raw, organic presence of the bats creates a unique aesthetic tension—refined artistry meeting untamed nature.  
-
-The temple courtyards are framed by traditional Balinese shrines with tiered meru roofs, their black thatch rising elegantly against the sky. Offerings of flowers and incense add bursts of color and fragrance, softening the solemn stone. The surrounding landscape, with its tropical foliage and distant view of the sea, enhances the temple’s aura of balance between earth and spirit.  
-
-At dusk, when the bats take flight in great swarms, the temple transforms into a living spectacle. The sky fills with silhouettes, while the shrines glow in the fading light, creating a scene that feels both mystical and cinematic. Goa Lawah’s beauty lies in this fusion of sacred ritual and natural drama, making it one of Bali’s most evocative temples. </p>
-    </ol>
-    <h3>non-religious things to do in bali</h3>
-    <ol>
-        <li>Waterfalls</li>
-        <ul>
-            <li>tegenugan waterfall</li>
-<p>Tegenungan Waterfall, located just outside Ubud, is one of Bali’s most accessible and popular cascades. Known for its powerful 15-meter drop surrounded by lush jungle, it offers a lively atmosphere where visitors can swim in the plunge pool, enjoy scenic viewpoints, and relax at nearby cafés. Its combination of natural beauty and easy access makes it a favorite stop for families, photographers, and travelers seeking both adventure and convenience.</p>
-            <li>Tukad Cepung Waterfall</li>
-<p>Tukad Cepung Waterfall is one of Bali’s most magical natural attractions, hidden within a canyon where sunlight streams through the opening above, creating dramatic beams that illuminate the water. This unique play of light makes it a favorite among photographers and travelers seeking a mystical atmosphere. Visitors enjoy trekking through narrow gorges, wading in shallow pools, and experiencing the surreal feeling of standing in a natural cathedral of stone and light.</p>
-            <li>Kanto Lampo Waterfall</li>
-<p>Kanto Lampo Waterfall, located just 30 minutes from Ubud, is a favorite for its playful and accessible setting. The water cascades down a rocky cliff in multiple streams, creating a natural curtain where visitors can climb, splash, and pose for photos. Its shallow pools and easy access make it ideal for families and casual adventurers, offering a fun and interactive experience rather than a strenuous trek. The combination of scenic beauty and hands-on enjoyment has made Kanto Lampo one of Bali’s most popular waterfalls.</p>
-            <li>Aling Aling Waterfall</li>
-<p>Aling Aling Waterfall, located in northern Bali, is famous for its adventurous spirit and natural beauty. Beyond its twin cascades, the area offers thrilling activities such as natural waterslides, cliff jumps of varying heights, and swimming in crystal-clear pools. Tourists love it not only for the scenery but also for the adrenaline-pumping experiences, making it one of Bali’s top destinations for those seeking both excitement and immersion in nature.</p>
-            <li>Leke Leke Waterfall</li>
-<p>Leke Leke Waterfall, tucked away in Tabanan Regency, is celebrated for its tall, narrow cascade framed by moss-covered cliffs and dense jungle. The approach itself is part of the charm, with a bamboo bridge leading visitors through lush greenery to the secluded site. Its romantic and picturesque setting makes it a favorite among photographers and couples, while activities like trekking, birdwatching, and picnicking add to its appeal. The tranquil atmosphere offers a peaceful escape from Bali’s busier attractions, making Leke Leke a hidden gem for those seeking serenity and natural beauty.</p>
-            <li>Beji Griya Waterfall</li>
-<p>Beji Griya Waterfall is unique among Bali’s natural attractions because it combines scenic beauty with spiritual significance. Nestled in a tranquil setting, it is renowned for purification rituals where visitors can immerse themselves in holy water as part of traditional cleansing ceremonies. Beyond its cultural depth, the waterfall itself is striking, with cascades flowing into serene pools surrounded by lush greenery. Travelers come here not only to admire the landscape but also to experience a soulful renewal, making Beji Griya a destination that blends nature, culture, and spirituality.</p>
-        </ul>
-        <li>Tegalalang Rice Terraces</li>
-<p>Tegalalang Rice Terraces, located just north of Ubud, are among Bali’s most iconic landscapes, celebrated for their breathtaking beauty and intricate design. The terraces unfold in sweeping layers across the valley, each curve of emerald-green paddies reflecting the artistry of the traditional Subak irrigation system. In the early morning, mist lingers over the fields, softening the contours and creating a dreamlike atmosphere, while sunlight later in the day illuminates the terraces in shimmering shades of green and gold. Palm trees rise elegantly from the slopes, adding vertical accents to the horizontal rhythm of the terraces. Visitors are enchanted by the interplay of geometry and nature—the precise lines of the paddies balanced by the organic flow of water and vegetation. Beyond admiring the view, travelers can walk along narrow paths, sip coffee at hillside cafés overlooking the valley, or capture photographs that highlight the terraces’ painterly symmetry. Tegalalang is famous not only for its aesthetic grandeur but also for its cultural significance, embodying the harmony between Balinese tradition and the natural world.</p>
-        <li>Campuhan Ridge Walk</li>
-<p>Campuhan Ridge Walk, nestled in the heart of Ubud, is celebrated for its serene beauty and painterly landscapes. The trail begins near the historic Gunung Lebah Temple and unfolds into a gentle ridge lined with tall grasses and swaying coconut palms. As you walk, the path reveals sweeping views of lush valleys, rice fields, and distant jungle-clad hills, all bathed in shifting light that changes from golden morning glow to fiery sunset hues. The ridge itself feels like a living canvas—its undulating curves framed by the sky above and the greenery below. Unlike Bali’s bustling tourist spots, Campuhan offers quietude, with only the sound of birdsong and the rustle of leaves accompanying your steps. It is famous for its accessibility and tranquil atmosphere, making it a favorite for photographers, couples, and anyone seeking a meditative stroll. The walk embodies Ubud’s essence: a harmonious blend of nature, culture, and spiritual calm.</p>
-        <li>Beaches</li>
-        <ul>
-            <li>Nusa Dua Beach</li>
-<p>Nusa Dua Beach is famous for its pristine white sand, calm turquoise waters, and luxurious atmosphere. Located in southern Bali, it is known as one of the island’s most family-friendly beaches thanks to its gentle waves, making it ideal for swimming, snorkeling, and water sports. Visitors enjoy strolling along the well-kept promenade, relaxing at upscale resorts, and indulging in fine dining nearby. Its reputation as a clean, safe, and elegant destination makes Nusa Dua Beach a favorite for those seeking relaxation with a touch of sophistication.</p>
-            <li>Kuta</li>
-<p>Kuta Beach is one of Bali’s most famous stretches of sand, known for its vibrant energy and long coastline. It is popular among surfers for its consistent waves, while sun-seekers enjoy lounging on the wide sandy shore. The area is also famous for its lively nightlife, bustling markets, and beachfront bars, making it a hub for socializing and entertainment. With its mix of surfing, shopping, and sunset views, Kuta offers a dynamic experience that appeals to both adventure lovers and party-goers.</p>
-            <li>Seminyak</li>
-<p>Seminyak Beach is renowned for its stylish and upscale vibe, offering a blend of relaxation and sophistication. With its wide golden sands and rolling waves, it’s popular for surfing, sunbathing, and long beach walks. The area is famous for trendy beach clubs, luxury resorts, and high-end shopping, making it a hotspot for travelers seeking both leisure and lifestyle experiences. As the sun sets, Seminyak transforms into a vibrant scene with chic bars and restaurants, offering unforgettable views and a lively atmosphere.</p>
-            <li>Jimbaran Bay</li>
-<p>Jimbaran Bay is celebrated for its golden sandy beach and calm waters, making it perfect for swimming and relaxing. What makes it truly famous is its beachfront seafood dining, where visitors can enjoy freshly grilled fish and prawns while watching the sun set over the horizon. The bay’s tranquil atmosphere contrasts with Bali’s busier beaches, offering a more laid-back experience. With its combination of natural beauty, culinary delights, and stunning sunsets, Jimbaran Bay is a favorite for couples, families, and food lovers alike.</p>
-        </ul>
-        <li>West Bali National Park</li>
-<p>West Bali National Park, covering nearly 10% of the island, is Bali’s only official national park and is famous for its pristine wilderness and biodiversity. It is home to rare species such as the critically endangered Bali starling, making it a paradise for birdwatchers and nature enthusiasts. Visitors are drawn to its diverse landscapes of mangroves, savannahs, and coral reefs, with Menjangan Island nearby offering world-class snorkeling and diving. The park provides a tranquil escape from Bali’s busier regions, showcasing the island’s natural heritage in its purest form.</p>
-        <li>Munduk</li>
-<p>Munduk, a charming mountain village in northern Bali, is famous for its cool climate, lush landscapes, and cascading waterfalls. Surrounded by coffee and clove plantations, it offers visitors a refreshing escape from the island’s tropical heat. Travelers are drawn to Munduk for its scenic trekking routes, colonial-era heritage, and panoramic views across valleys and rice terraces. With hidden waterfalls like Munduk and Melanting nearby, it has become a paradise for hikers and nature lovers. The tranquil atmosphere and authentic village life make Munduk a perfect retreat for those seeking serenity and cultural immersion.</p>
-        <li>Nusa Lembongan</li>
-<p>Nusa Lembongan, a small island off Bali’s southeast coast, is famous for its crystal-clear waters, vibrant coral reefs, and relaxed atmosphere. It has become a favorite destination for snorkeling and diving, with sites where manta rays and colorful marine life thrive. The island is also known for its surfing spots, mangrove forests, and the iconic Yellow Bridge that connects it to Nusa Ceningan. Visitors enjoy exploring cliff-top viewpoints, golden beaches, and laid-back cafés, making Nusa Lembongan a perfect escape from Bali’s busier mainland. Its slower pace and enchanting sunsets offer a glimpse of Bali’s charm before mass tourism.</p>
-    </ol>
-    <hr>
-    <style>
-        table,
-        tr,
-        td {
-            border: 1px solid black;
-        }
-    </style>
-    <table style="width: 50%;">
-        <h3>famous treks in bali</h3>
-        <tr>
-            <td>Name of the trek</td>
-            <td>Distance</td>
-            <td>Time taken</td>
-        </tr>
-        <tr>
-            <td>Mount Batur sunrise trek</td>
-            <td>5 km.</td>
-            <td>4 hrs.</td>
-        </tr>
-
-        <tr>
-            <td>Sambangan Secret Garden Trek</td>
-            <td>4 km.</td>
-            <td>3 hrs.</td>
-        </tr>
-
-        <tr>
-            <td>Sari Organic Walk</td>
-            <td>3.5 km.</td>
-            <td>3 hrs.</td>
-        </tr>
-    </table>
-    <hr>
-</body>
-
 </html>
