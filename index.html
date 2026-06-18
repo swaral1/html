@@ -12,7 +12,7 @@
 
   <style>
     :root {
-      --text-main: #fff7f1;
+      --text-main: #fff8f2;
       --text-soft: #f7dfcf;
       --accent: #ffb8cc;
       --accent-2: #ffd6a5;
@@ -73,22 +73,23 @@
 
     .hero {
       position: relative;
-      min-height: 70vh;
+      min-height: 100vh;
+      overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 28px 18px;
-      overflow: hidden;
+      padding: 24px;
     }
 
     .hero-video {
       position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translate(-50%, -50%);
       object-fit: cover;
-      filter: saturate(1.05) contrast(1.05) brightness(0.72);
-      transform: scale(1.03);
+      filter: brightness(0.72) saturate(1.05) contrast(1.05);
       z-index: -3;
     }
 
@@ -97,44 +98,59 @@
       inset: 0;
       z-index: -2;
       background:
-        linear-gradient(to bottom, rgba(12, 8, 15, 0.22), rgba(12, 8, 15, 0.62)),
+        linear-gradient(to bottom, rgba(10, 7, 14, 0.24), rgba(10, 7, 14, 0.60)),
         radial-gradient(circle at top, rgba(255, 180, 220, 0.16), transparent 40%);
     }
 
-    .content {
+    .hero-content {
       position: relative;
       z-index: 2;
-      width: min(1200px, 100%);
+      width: min(1100px, 100%);
       text-align: center;
+      padding: 24px;
     }
 
     .title {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(2.6rem, 6vw, 5.5rem);
+      font-size: clamp(2.8rem, 7vw, 6rem);
       line-height: 0.95;
       margin: 0;
       color: var(--text-main);
       letter-spacing: 0.6px;
-      text-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      text-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
     }
 
     .subtitle {
-      max-width: 860px;
-      margin: 14px auto 0;
+      max-width: 900px;
+      margin: 16px auto 0;
       color: var(--text-soft);
       font-size: 1.02rem;
       line-height: 1.9;
     }
 
-    .glass {
+    .scroll-hint {
       margin-top: 26px;
+      color: #ffe9db;
+      font-size: 0.95rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      opacity: 0.9;
+    }
+
+    .section {
+      width: min(1200px, calc(100% - 36px));
+      margin: 24px auto 0;
+      padding-bottom: 50px;
+    }
+
+    .glass {
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: 26px;
       box-shadow: var(--shadow);
       backdrop-filter: blur(14px);
       padding: 22px;
-      text-align: left;
+      margin-top: 22px;
     }
 
     h2, h3 {
@@ -142,16 +158,16 @@
       color: var(--text-main);
       text-align: center;
       letter-spacing: 0.4px;
+      margin: 0 0 18px;
     }
 
     h2 {
       font-size: clamp(1.9rem, 4vw, 3rem);
-      margin: 34px 0 18px;
+      margin-top: 34px;
     }
 
     h3 {
       font-size: clamp(1.6rem, 3vw, 2.4rem);
-      margin: 0 0 18px;
     }
 
     .temple-list,
@@ -182,7 +198,6 @@
       top: 14px;
       color: var(--accent);
       font-size: 1.1rem;
-      text-shadow: 0 0 12px rgba(255, 184, 204, 0.4);
     }
 
     .activity-list > li::before {
@@ -250,7 +265,8 @@
 
     @media (max-width: 768px) {
       .hero {
-        min-height: 58vh;
+        min-height: 100vh;
+        padding: 18px;
       }
 
       .glass {
@@ -273,28 +289,29 @@
     </video>
     <div class="hero-overlay"></div>
 
-    <div class="content">
+    <div class="hero-content">
       <h1 class="title">Tourist Attractions in Bali</h1>
       <p class="subtitle">
-        A glowing Bali travel page with a cinematic aura, elegant typography, and a soft premium feel.
+        A cinematic Bali showcase with glowing aura visuals, soft pastel light, and a premium travel-style layout.
       </p>
+      <div class="scroll-hint">Scroll Down</div>
     </div>
   </section>
 
-  <div class="content">
+  <div class="section">
     <h2>Top 10 Temples in Bali</h2>
     <div class="glass">
       <ol class="temple-list">
-        <li>Ubud Palace<br><img class="card-img" src="https://i.pinimg.com/736x/0a/36/c8/0a36c8bcbc26f40cea0e3ac929ce44e1.jpg" alt="Ubud Palace"></li>
-        <li>Uluwatu Temple<br><img class="card-img" src="https://lestacworld.com/wp-content/uploads/2021/05/uluwatu-cliff-temple.jpeg" alt="Uluwatu Temple"></li>
-        <li>Lempuyang Temple<br><img class="card-img" src="https://www.baliholidaysecrets.com/wp-content/uploads/2019/11/lempuyang-temple-11-bali-holiday-secrets-590x735.jpg" alt="Lempuyang Temple"></li>
-        <li>Tanah Lot Temple<br><img class="card-img" src="https://vietnamalluretravel.com/wp-content/uploads/2024/09/DJI_0943_1200-1.jpg" alt="Tanah Lot Temple"></li>
-        <li>Besakih Temple<br><img class="card-img" src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0a/99/ce/f7.jpg" alt="Besakih Temple"></li>
-        <li>Saraswati Temple<br><img class="card-img" src="https://lesdroners.fr/wp-content/uploads/2020/10/saraswati-temple-ubud-scaled.jpg" alt="Saraswati Temple"></li>
-        <li>Taman Ayun Temple<br><img class="card-img" src="https://static.toiimg.com/thumb/msid-47330125,width-550,height-433/47330125.jpg" alt="Taman Ayun Temple"></li>
-        <li>Goa Gajah Temple<br><img class="card-img" src="https://th.bing.com/th/id/OIP.1AMfl5a3W1Lv1YG_4bQXHgHaE7?r=0&rs=1&pid=ImgDetMain" alt="Goa Gajah Temple"></li>
-        <li>Ulun Danu Beratan Temple<br><img class="card-img" src="https://th.bing.com/th/id/OIP.S6bO6XrYc467CsH91JtBjwHaEo?r=0&rs=1&pid=ImgDetMain" alt="Ulun Danu Beratan Temple"></li>
-        <li>Goa Lawah Temple<br><img class="card-img" src="https://www.baligoldentour.com/images/bali-interest-place/goa-lawah-temple-1.jpg" alt="Goa Lawah Temple"></li>
+        <li>Ubud Palace</li>
+        <li>Uluwatu Temple</li>
+        <li>Lempuyang Temple</li>
+        <li>Tanah Lot Temple</li>
+        <li>Besakih Temple</li>
+        <li>Saraswati Temple</li>
+        <li>Taman Ayun Temple</li>
+        <li>Goa Gajah Temple</li>
+        <li>Ulun Danu Beratan Temple</li>
+        <li>Goa Lawah Temple</li>
       </ol>
     </div>
 
